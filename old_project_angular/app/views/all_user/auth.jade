@@ -1,0 +1,39 @@
+extends ../layout/layout
+block content
+    nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+        div.navbar-brand.logotip Shotr Url
+        li.dropdown.profile.pull-right(role="presentation")
+            div(ng-controller="ModalDemoCtrl")
+                script(type="text/ng-template" id="myModalContent.html")
+                    div.modal-header
+                        h3.modal-title Login
+                    div.modal-body
+                        form.css-form(novalidate method="POST" action="/login")
+                            input(type="email" placeholder="Enter email" name="email" ng-model="user.email" required)
+                            input(type="password" placeholder="Password" name="password" ng-model="user.password" required)
+                            input(type="submit" ng-click="update(user)" value="Login")
+                            a(href="/auth/vk") Войти через Vk.com
+                            a(href="/auth/fb") Войти через fb
+                button.btn.btn-default(ng-click="open('sm')") Log In
+            div(ng-controller="ModalDemoCtrl2")
+                script(type="text/ng-template" id="myModalContent2.html")
+                    div.modal-header
+                        h3.modal-title Reigstration
+                    div.modal-body
+                        form.css-form(novalidate method="POST" action="/registration")
+                            input(type="email" placeholder="Enter email" name="email" ng-model="user.email" required)
+                            input(type="password" placeholder="Password" name="password" ng-model="user.password" required)
+                            input(type="submit" ng-click="update(user)" value="Registration")
+                            a.btn.btn-default(href="/auth/vk") Регистрация через Vk.com
+                            a.btn.btn-default(href="/auth/fb") Регистрация через fb
+                button.btn.btn-default(ng-click="open2('sm')") Registration
+
+    script.
+        var mistake = '#{mistake}';
+        if(mistake)
+            alert(mistake)
+    p #{mistake}
+    div.container-fluid
+        .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                include ./users
