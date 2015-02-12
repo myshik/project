@@ -1,0 +1,27 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.list_goes_here {
+  min-height: 200px;
+}
+@media (min-width: 768px) {
+  .container-fluid {
+    max-width: 1200px;
+  }
+}
+button {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+.container-fluid {
+  padding: 70px 45px;
+  font-size: 21px;
+}
+li {
+  list-style-type: none;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
