@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: plugin Polls for Almaz CMS v.1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-08 13:13+0600\n"
+"PO-Revision-Date: 2009-07-05 01:25+0500\n"
+"Last-Translator: igrok54 <igrok54@mail.ru>\n"
+"Language-Team: LANGUAGE <igrok54@mail.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: polls/poll.php:7
+msgid "An error occurred in the process of displaying the requested page"
+msgstr "An error occurred in the process of displaying the requested page"
+
+#: polls/poll.php:8
+msgid "Loading"
+msgstr "Loading"
+
+#: polls/poll.php:15
+msgid "Survey"
+msgstr "Survey"
+
+#: polls/poll.php:16
+msgid "Results"
+msgstr "Results"
+
+#: polls/rezult.php:7
+msgid "You have already voted in this poll. Thanks"
+msgstr "You have already voted in this poll. Thanks"
+
+#: polls/rezult.php:11
+#: polls/rezult.php:36
+#: polls/rezult.php:49
+msgid "Votes"
+msgstr "Votes"
+
+#: polls/rezult.php:37
+msgid "Thank you. Your voice takes into account"
+msgstr "Thank you. Your voice takes into account"
+
+#: polls/rezult.php:50
+msgid "You have not expressed an opinion"
+msgstr "You have not expressed an opinion"
+
+#: polls/rezult.php:58
+msgid "No one expressed an opinion on this poll"
+msgstr "No one expressed an opinion on this poll"
+
+#: polls/rezult.php:58
+msgid "Will be the first"
+msgstr "Will be the first"
+
+#: polls/vote.php:25
+msgid "Vote"
+msgstr "Vote"
+

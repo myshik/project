@@ -1,0 +1,12 @@
+Plugin themes switcher - allows your visitors to Almaz CMS to choose a template, in which will work with the site.
+
+It works on the basis of the sessions and cookies. User change the theme design gets cookies, which determined that script should put the site in this template.
+Therefore, IF WHEN TESTING IS ERROR OCCURRED, for example, you changed to a design theme, but not inserted in her block themes switcher, то, To return the default theme in your browser, CLEAR COOKIES!
+
+NOTE: implemented two versions of work the plugin:
+1. templates in themes switcher selected from all available in the folder templates. (pitfalls: all patterns in the templates folder must have block of plugin ... See below)
+2. in themes switcher only those templates that you specify in the configuration (const.php), established in an array $tpl (prescribe carefully if config write to aaa and the template is in a folder aab - the plugin will look for a folder of aaa, and as a result of the user chose this design, the site does not receive the design, so it is best if the activation patterns to verify their correct working visually.)
+
+In order to use the plugin, except for activation in a configuration file required in everyone templates who works, insert in the sidebar following line to display the form template choices:
+
+<?php if(TPL===1) { ?><li><?php include (SPATH.'plugins/themes_switcher/switcher.php'); ?></li><?php } ?>

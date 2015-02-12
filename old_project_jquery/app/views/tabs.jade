@@ -1,0 +1,30 @@
+div#tabs-row.row
+   div.col-lg-12.col-md-12.col-sm-12.col-xs-12
+      div(role='tabpanel')
+         ul.nav.nav-tabs(role='tablist')
+            li(role='presentation', class=(state == "all" ? "active" : ""))
+               a(href='#all', aria-controls='all', role='tab', data-toggle='tab') All
+            li.checked_tab(role='presentation', class=(state == "checked" ? "active" : ""))
+               a(href='#checked', aria-controls='checked', role='tab', data-toggle='tab') Active
+            li(role='presentation', class=(state == "unchecked" ? "active" : ""))
+               a(href='#unchecked', aria-controls='unchecked', role='tab', data-toggle='tab') Completed
+         div.tab-content
+            div#all.tab-pane(role='tabpanel', class=(state == "all" ? "active" : ""))
+               div.row
+                  div.col-lg-12.col-md-12.col-sm-12.col-xs-12.list_goes_here
+                     if state == "all"
+                        include links
+            div#checked.tab-pane(role='tabpanel', class=(state == "checked" ? "active" : ""))
+               div.row
+                  div.col-lg-12.col-md-12.col-sm-12.col-xs-12.list_goes_here
+                     if state == "checked"
+                        include links
+            div#unchecked.tab-pane(role='tabpanel', class=(state == "unchecked" ? "active" : ""))
+               div.row
+                  div.col-lg-12.col-md-12.col-sm-12.col-xs-12.list_goes_here
+                     if state == "unchecked"
+                        include links
+
+      div.row
+         div.col-lg-12.col-md-12.col-sm-12.col-xs-12.pagin_goes_here
+            include pagination

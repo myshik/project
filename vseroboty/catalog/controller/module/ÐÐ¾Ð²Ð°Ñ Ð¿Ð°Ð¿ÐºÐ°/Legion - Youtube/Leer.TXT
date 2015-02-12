@@ -1,0 +1,24 @@
+
+Legion-Youtube video Module - OpenCart 1.4.9/1.4.9.1/1.4.9.3
+
+
+
+Install/Instalar:
+
+
+- Copiar y pegar las carpetas 'admin' y 'catalog' en el directorio raiz. Esto no reemplazara nada.
+- Copy and paste the folders 'admin' and 'catalog' in the root directory. This does not replace anything.
+
+
+
+Config/Configurar:
+
+
+- Ir a Extensiones/Modulos y configurar el modulo de Youtube.
+- Go to Extensions/Modules and configure the Youtube module.
+
+
+
+
+/  LegionStudio.NET
+/  info@legionstudio.net

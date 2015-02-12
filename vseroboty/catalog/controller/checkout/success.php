@@ -1,0 +1,99 @@
+<?php 
+class ControllerCheckoutSuccess extends Controller { 
+	public function index() { 
+		if (isset($this->session->data['order_id'])) {
+			$this->cart->clear();
+			
+			unset($this->session->data['shipping_method']);
+			unset($this->session->data['shipping_methods']);
+			unset($this->session->data['payment_method']);
+			unset($this->session->data['payment_methods']);
+			unset($this->session->data['guest']);
+			unset($this->session->data['comment']);
+			unset($this->session->data['order_id']);	
+			unset($this->session->data['coupon']);
+			unset($this->session->data['reward']);
+			unset($this->session->data['voucher']);
+			unset($this->session->data['vouchers']);
+		}	
+									   
+		$this->language->load('checkout/success');
+		
+		$this->document->setTitle($this->language->get('heading_title'));
+		
+		$this->data['breadcrumbs'] = array(); 
+
+      	$this->data['breadcrumbs'][] = array(
+        	'href'      => $this->url->link('common/home'),
+        	'text'      => $this->language->get('text_home'),
+        	'separator' => false
+      	); 
+		
+      	$this->data['breadcrumbs'][] = array(
+        	'href'      => $this->url->link('checkout/cart'),
+        	'text'      => $this->language->get('text_basket'),
+        	'separator' => $this->language->get('text_separator')
+      	);
+				
+		$this->data['breadcrumbs'][] = array(
+			'href'      => $this->url->link('checkout/checkout', '', 'SSL'),
+			'text'      => $this->language->get('text_checkout'),
+			'separator' => $this->language->get('text_separator')
+		);	
+					
+      	$this->data['breadcrumbs'][] = array(
+        	'href'      => $this->url->link('checkout/success'),
+        	'text'      => $this->language->get('text_success'),
+        	'separator' => $this->language->get('text_separator')
+      	);
+		
+    	$this->data['heading_title'] = $this->language->get('heading_title');
+
+		if ($this->customer->isLogged()) {
+    		$this->data['text_message'] = sprintf($this->language->get('text_customer'), $this->url->link('account/account', '', 'SSL'), $this->url->link('account/order', '', 'SSL'), $this->url->link('account/download', '', 'SSL'), $this->url->link('information/contact'));
+		} else {
+    		$this->data['text_message'] = sprintf($this->language->get('text_guest'), $this->url->link('information/contact'));
+		}
+		
+    	$this->data['button_continue'] = $this->language->get('button_continue');
+
+    	$this->data['continue'] = $this->url->link('common/home');
+
+		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/success.tpl')) {
+			$this->template = $this->config->get('config_template') . '/template/common/success.tpl';
+		} else {
+			$this->template = 'default/template/common/success.tpl';
+		}
+		
+		$this->children = array(
+			'common/column_left',
+			'common/column_right',
+			'common/content_top',
+			'common/content_bottom',
+			'common/footer',
+			'common/header'			
+		);
+				
+		$this->response->setOutput($this->render());
+  	}
+}
+?>
+
+<!-- Google Code for &#1055;&#1086;&#1082;&#1091;&#1087;&#1082;&#1072; Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1002772673;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "vMMUCJ-43QMQwbGU3gM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1002772673/?value=0&amp;label=vMMUCJ-43QMQwbGU3gM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>

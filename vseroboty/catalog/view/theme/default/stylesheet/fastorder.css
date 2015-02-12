@@ -1,0 +1,95 @@
+@charset "utf-8";
+.msg_error {
+	border:1px solid #C75A5A;
+	background-color:#F7CFCF;
+	color: red;
+	display:none;
+}
+
+.msg_error a {
+	color: red;
+}
+
+.msg_ok{
+	color: #006600;
+	display: none;
+}
+
+.elem input, .elem select, .help, .call, #show_info{
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+.elem {
+	margin: 10px 10px 10px 49px;
+	width: 305px;
+
+}
+.elem input, .elem select, .elem textarea  {
+	font-size:12px;
+	width: 240px;
+	padding: 3px 5px;
+	border:1px solid #ccc;
+}
+#go {width: 252px;}
+
+.call {
+	color: #333333;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.call label { font-size:11px; font-weight:normal;}
+
+#close_w {
+	width: 100%;
+	text-align:right;
+}
+
+.fast_order_desc {
+	margin: 10px 10px 10px 20px;
+	color:#39839E;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+}
+.fast_order_desc span {clear:both; font-size:14px; color:#000; display:block}
+
+.msg_ok{
+	color: #006600;
+	display: none;
+}
+
+.msg_error {
+	border:1px solid #C75A5A;
+	background-color:#F7CFCF;
+	padding: 10px 30px;
+	margin: 0px 30px;
+	color: red;
+	display:none;
+}
+
+#close_remind {	padding: 5px 5px 0px 0px;}
+
+#fast_order form {
+	margin: 0px auto;
+}
+
+/* лайтбокс */
+#overlay {background-color:#000; position:absolute; top:0; left:0; z-index:999; display:none; overflow:hidden;}
+#loading {background: url('../image/loading.gif') center no-repeat;border:1px solid #888; width:50px; height:50px; position:absolute; top:50%; left:50%; z-index:100; margin:-25px 0 0 -25px; display:none;}
+.toOrder {width: 136px;height: 24px;padding:15px 0 0 15px; position:relative; top:6px; text-align:center; display: inline-block;background: url(images/add-to-cart_green.png) 0 0 no-repeat; color:#fff!important; text-decoration:none;}
+#fast_order {
+text-align:left;
+	font-size:12px;
+    width: 360px;
+	height:auto;
+	border:1px solid #999; background:#FFF;
+	-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+}
+#fast_order {background-color:#fff; padding:10px; display:none; position:absolute; top:50%; left:50%;  z-index:1000;}
+#fast_order .msg_error, #fast_order .msg_ok {font-size:12px; padding: 10px 10px;}
+#fast_order img {vertical-align:middle; margin:-3px 0 0 4px;}
+.product-info .cart .fastorder {float:left;margin-top: 1px;}
+.product-grid .fastorder  {margin-top:3px;}

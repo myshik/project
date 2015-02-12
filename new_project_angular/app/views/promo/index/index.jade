@@ -1,0 +1,51 @@
+extends ../layout/layout
+
+block content
+        header
+            ul
+                li
+                    h1 Short Url
+                li.pull-right
+                    div(ng-controller="registration")
+                        script(type="text/ng-template" id="registration.html")
+                            div.modal-header
+                                h3.modal-title Reigstration
+                            div.modal-body
+                                form.css-form(novalidate method="POST" action="/registration")
+                                    div.form-group
+                                        label(for="Email") Email
+                                        input#Email.form-control(type="email" placeholder="Enter email" name="email" ng-model="user.email" required)
+                                    div.form-group
+                                        label(for="password") Password
+                                        input#password.form-control(type="password" placeholder="Password" name="password" ng-model="user.password" required)
+                                    div.form-group
+                                        label(for="repassword") Repeat Password
+                                        input#repassword.form-control(type="password" placeholder="Password" name="repassword" ng-model="user.repassword" required)
+                                    input(type="submit" ng-click="update(user)" value="Registration")
+                        button.btn.btn-default(ng-click="open2('sm')") Registration
+                li.pull-right
+                    div(ng-controller="logIn")
+                        script(type="text/ng-template" id="logIn.html")
+                            div.modal-header
+                                h3.modal-title Login
+                            div.modal-body
+                                form.css-form(novalidate method="POST" action="/")
+                                    div.form-group
+                                        label(for="Email") Email
+                                        input#Email.form-control(type="email" name="email" ng-model="user.email" required)
+                                    div.form-group
+                                        label(for="password") Password
+                                        input#password.form-control(type="password" name="password" ng-model="user.password" required)
+                                    input(type="submit" ng-click="update(user)" value="Login")
+                                    a(href="/auth/vk") Войти через vkontakte
+                                    a(href="/auth/fb") Войти через facebook
+                        button.btn.btn-default(ng-click="open('sm')") Log In
+
+        div.content
+            div(ng-controller="accordionCtrl")
+                accordion(close-others="oneAtATime")
+                    accordion-group(is-open="status.open" ng-repeat="user in users")
+                        accordion-heading(data-ng-bind="user.username")
+                        i.pull-right.glyphicon(ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}")
+                        li(ng-repeat="link in links")
+                            a(href="{{link.longUrl}}" ng-if="link .user_id == user._id" data-ng-bind="link.shortUrl")

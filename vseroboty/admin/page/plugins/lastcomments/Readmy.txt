@@ -1,0 +1,14 @@
+Plugin "Recent Comments"
+
+Steps for setting:
+
+1. Upload folder with plugin via FTP in the plugins folder
+
+2. Configuring the plug is made to the file in the const.php root folder of  script - look at configuring the plugin if they do not exist, add the lines:
+#### Plugin "Recent Comments"
+define('LASTCOMMEMTS', 1);				// Activate the plugin "Recent Comments"
+define('LASTCOOMENTTITLE', '');			// Between the quotation marks enter the name of the block, example ' Recent comments'
+define('COUNTLC', 5);					// The number displayed in the block of recent comments
+
+3. To display at pages in the sidebar to the right place to be entered php-code that displays a block only if it is activated:
+<?php if(LASTCOMMEMTS===1) { ?><li><h2><?php echo LASTCOOMENTTITLE; ?></h2><ul><?php include (SPATH.'plugins/lastcomments/lastcomments.php'); ?></ul></li><?php } ?>

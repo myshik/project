@@ -1,0 +1,49 @@
+<html>
+<head><style type="text/css">
+	      .map {height: 100%; width: 100%;}
+              #map_leeds {height: 100% !important; }
+	    </style>
+<link rel="stylesheet" id="collapseomatic-css-css" href="http://raketa.pro/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.5.2" type="text/css" media="all">
+<script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.ru.SRuzShHYxpw.O/m=plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AItRSTM6CkYosI6lfokh-5QJJcxLDFwESw/cb=gapi.loaded_0" async="" style=""></script>
+<script type="text/javascript" src="http://raketa.pro/wp-includes/js/jquery/jquery.js?ver=1.8.3"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;language=ru"></script>
+</head>
+<body onload="initialize()">
+<script type="text/javascript">
+            function initialize() {
+
+var styles = �[
+{
+featureType: "administrative.locality",
+elementType: "labels",
+stylers: [ { visibility: "off" } ]
+}
+];
+
+                var leeds = new google.maps.LatLng(59.819523, 30.290895);
+
+                var firstLatlng = new google.maps.LatLng(59.819523, 30.290895);
+
+                var firstOptions = {
+                    zoom: 10,
+                    center: firstLatlng,
+                    streetViewControl: false,
+                    scaleControl: false,
+                    mapTypeControl: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var map = new google.maps.Map(document.getElementById("map_leeds"), firstOptions);
+
+                map.setOptions({styles: styles});
+
+            }
+            </script>
+
+            <div class="map">
+
+                <div id="map_leeds" style="width: 100%; height: 165px"></div>
+
+            </div>
+
+</body></html>

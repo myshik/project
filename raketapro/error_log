@@ -1,0 +1,3 @@
+[25-Aug-2013 12:17:05 UTC] PHP Fatal error:  Call to undefined function creativesocial() in /home/cp310939/public_html/raketanew/wp-content/themes/business-essentials-wp/single.php on line 149
+[24-Jan-2014 12:51:50 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/cp288498/public_html/raketanew/wp-content/themes/business-essentials-wp/header.php on line 119
+[24-Jan-2014 13:48:23 UTC] PHP Fatal error:  Call to undefined function get_header2() in /home/cp288498/public_html/raketanew/wp-content/themes/business-essentials-wp/page2.php on line 2

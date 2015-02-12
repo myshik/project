@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+    .row
+      .col-lg-2.col-md-2.col-sm-2.col-xs-2.col-lg-offset-5.col-md-offset-5.col-sm-offset-5.col-xs-offset-5
+        form(role="form" method="POST" action="/login")
+            div.form-group
+                label(for="email")
+                input.form-control#email(type="email" placeholder="Enter email" name="email")
+            div.form-group
+                label(for="password")
+                input.form-control#email(type="password" placeholder="Password" name="password")
+            button#input.but.btn.btn-success.pull-right(role='submit') Log In
+            a(href="registration") Registration

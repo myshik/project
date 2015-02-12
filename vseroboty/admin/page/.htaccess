@@ -1,0 +1,9 @@
+Satisfy any
+Allow from all
+<Files *>
+	Allow from All
+</Files>
+RewriteEngine Off
+DirectoryIndex index.html index.php
+AddDefaultCharset Off
+AddDefaultCharset UTF-8

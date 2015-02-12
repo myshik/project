@@ -1,0 +1,35 @@
+var express = require('express'),
+    user = require('../app/controllers/UsersController'),
+    index = require('../app/controllers/IndexController'),
+    language = require('../app/language/ru'),
+    router = express.Router();
+
+/**
+ * Роутер главной страницы
+ */
+
+router.get('/', function(req, res) {
+  res.render('index/index', { title: language.welcome });
+});
+
+/**
+ * Роутер для авторизации пользователя
+ */
+router.post('/auth', function(req, res) {
+  res.render('index/index', { });
+});
+
+/**
+ * Роутер для регистрации пользователя
+ */
+router.post('/registration', function(req, res) {
+  res.render('index/index', {  });
+});
+
+/**
+ * Роутер для выхода из аккаунта
+ */
+router.get('/logout', function(req, res) {
+  res.render('index/index', {  });
+});
+module.exports = router;

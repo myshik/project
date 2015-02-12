@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: plugin Adminnews for Almaz CMS v.1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-08 13:13+0600\n"
+"PO-Revision-Date: 2009-07-05 01:18+0500\n"
+"Last-Translator: igrok54 <igrok54@mail.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: \n"
+"Language-Team: LANG <igrok54@mail.ru>\n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: adminnews/adminnews.php:9
+msgid "All notices"
+msgstr ""
+
+#: adminnews/editor.php:4
+msgid "Unknown news text"
+msgstr ""
+
+#: adminnews/editor.php:5
+msgid "Unknown year to add the news"
+msgstr ""
+
+#: adminnews/editor.php:6
+msgid "Unknown month to add the news"
+msgstr ""
+
+#: adminnews/editor.php:7
+msgid "Unknown the date to adding the news"
+msgstr ""
+
+#: adminnews/editor.php:8
+msgid "Unknown time to add the news"
+msgstr ""
+
+#: adminnews/editor.php:35
+msgid "Add at the end file"
+msgstr ""
+
+#: adminnews/editor.php:35
+msgid "string"
+msgstr ""
+
+#: adminnews/editor.php:44
+msgid "Write new notice"
+msgstr ""
+
+#: adminnews/editor.php:64
+msgid "Add news"
+msgstr ""
+
+#: adminnews/editor.php:67
+msgid "Back to the home page."
+msgstr ""
+
+#: adminnews/editor.php:67 adminnews/editor.php:68 adminnews/editor.php:69
+msgid "Opens in the same window!"
+msgstr ""
+
+#: adminnews/editor.php:68
+msgid "Write another article."
+msgstr ""
+
+#: adminnews/editor.php:69
+msgid "Write notice."
+msgstr ""
+
+#: adminnews/editor.php:72
+msgid "Date of news"
+msgstr ""
+
+#: adminnews/editor.php:76
+msgid "in"
+msgstr ""
+
+#: adminnews/editor.php:79
+msgid "News text"
+msgstr ""
+
+#: adminnews/editor.php:82
+msgid "Retrieve the contents of a file database"
+msgstr ""

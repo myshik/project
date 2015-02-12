@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: plugin Captha for Almaz CMS v.1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-08 13:13+0600\n"
+"PO-Revision-Date: 2009-07-07 00:13+0500\n"
+"Last-Translator: igrok54 <igrok54@mail.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Language-Team: LANG <igrok54@mail.ru>\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+
+#: captcha/form.php:3
+msgid "Refresh image can be by clicking on it."
+msgstr "Перезагрузить картинку можно кликнув по ней."
+
+#: captcha/form.php:16
+msgid "Enter only the last 4 digits, first 2 letters DO NOT WRITE."
+msgstr "Введите только последние четыре цифры, первые две буквы НЕ ВВОДИТЕ."
+
+#: captcha/rez.php:19
+msgid "Incorrect entered security code CAPTCHA. CAPTCHA consists of two letters and four digits. The first two letters DO NOT NEED TO ENTER. Need to ENTER ONLY THE FINAL FOUR DIGITS."
+msgstr "Неверно введен проверочный код. Капча состоит из двух букв и четырех цифр. Первые две буквы ВВОДИТЬ НЕ НАДО. Необходимо ввести ТОЛЬКО ПОСЛЕДНИЕ ЧЕТЫРЕ ЦИФРЫ."
+
+#: captcha/rez.php:22
+msgid "Back"
+msgstr "Назад"
+

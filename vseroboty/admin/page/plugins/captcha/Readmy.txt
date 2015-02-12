@@ -1,0 +1,9 @@
+
+1. In the form of comments in file single.php insert string:
+<?php if(CAPTCHA===1) {include(SPATH.'plugins/captcha/form.php'); } ?>
+for displayed form of captcha.
+
+2. In the begin of file comments-post.php after string:
+require('const.php');
+insert string:
+if(CAPTCHA===1) {require(SPATH.'plugins/captcha/rez.php');}

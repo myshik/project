@@ -1,0 +1,21 @@
+extends ../layout/layout
+block content
+   nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      div.navbar-brand.logotip Short url
+      li.dropdown.profile.pull-right(role="presentation")
+         a.dropdown-toggle(data-toggle="dropdown" role="button" aria-expanded="false")
+            span.label Profile
+            div.glyphicon.glyphicon-user
+            span.caret
+         ul.dropdown-menu(ng-controller="MenuCtrl")
+            li
+               a(href="/cabinet/all") All links
+            li
+               a(href="/private") My links
+            li
+               a(href="/edit") Edit profile
+            li
+               a(ng-click="logout()") Logout
+
+   div.container-fluid(ng-controller="MainController")
+      div(ng-view)

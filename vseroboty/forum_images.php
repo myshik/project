@@ -1,0 +1,30 @@
+<?php
+	$image = $_POST['id'];
+?>
+
+<table border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_new.png" /><br><input name="image" type="radio" value="forum_new.png" <?php echo ($image=='forum_new.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_balloons.png" /><br><input name="image" type="radio" value="forum_balloons.png" <?php echo ($image=='forum_balloons.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_black.png" /><br><input name="image" type="radio" value="forum_black.png" <?php echo ($image=='forum_black.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_bleetbox.png" /><br><input name="image" type="radio" value="forum_bleetbox.png" <?php echo ($image=='forum_bleetbox.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_box.png" /><br><input name="image" type="radio" value="forum_box.png" <?php echo ($image=='forum_box.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_checkbox.png" /><br><input name="image" type="radio" value="forum_checkbox.png" <?php echo ($image=='forum_checkbox.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_facebook.png" /><br><input name="image" type="radio" value="forum_facebook.png" <?php echo ($image=='forum_facebook.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_hilight.png" /><br><input name="image" type="radio" value="forum_hilight.png" <?php echo ($image=='forum_hilight.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_inbox.png" /><br><input name="image" type="radio" value="forum_inbox.png" <?php echo ($image=='forum_inbox.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_mailbox.png" /><br><input name="image" type="radio" value="forum_mailbox.png" <?php echo ($image=='forum_mailbox.png')? 'checked' : '' ?> ></label></p></td>
+  </tr>
+  <tr>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_message_frame.png" /><br><input name="image" type="radio" value="forum_message_frame.png" <?php echo ($image=='forum_message_frame.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_message_idea.png" /><br><input name="image" type="radio" value="forum_message_idea.png" <?php echo ($image=='forum_message_idea.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_message_info.png" /><br><input name="image" type="radio" value="forum_message_info.png" <?php echo ($image=='forum_message_info.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_message_warning.png" /><br><input name="image" type="radio" value="forum_message_warning.png" <?php echo ($image=='forum_message_warning.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_message.png" /><br><input name="image" type="radio" value="forum_message.png" <?php echo ($image=='forum_message.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_sticky_note.png" /><br><input name="image" type="radio" value="forum_sticky_note.png" <?php echo ($image=='forum_sticky_note.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_sticky_notes.png" /><br><input name="image" type="radio" value="forum_sticky_notes.png" <?php echo ($image=='forum_sticky_notes.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum_twitter.png" /><br><input name="image" type="radio" value="forum_twitter.png" <?php echo ($image=='forum_twitter.png')? 'checked' : '' ?> ></label></p></td>
+    <td style="margin:0; padding:0 5px 0 5px; width:0;"><p><label><img src="http://opencart.checkyoursites.com/modules/forum/images/forum.png" /><br><input name="image" type="radio" value="forum.png" <?php echo ($image=='forum.png')? 'checked' : '' ?> ></label></p></td>
+    <td class="tbimage">&nbsp;</td>
+  </tr>
+</table>

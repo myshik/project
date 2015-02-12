@@ -1,0 +1,15 @@
+Plugin "Short news from the administration"
+
+Text of news remains in the file adminnews.txt in the folder of this plugin. In the news you can use html-code.
+
+Configuration of made in the file const.php at the root of the script - look at configuring plugins, if not, add the lines:
+#### Plugin "Short news from the administration"
+define('ADMINNEWS', 1);				// Activate the plugin "Short news from the administration" (Show or no show block short news)
+define('ANCOUNT', 3);					// The number displayed in a block of news from the admin
+$title = _('Archive of announcements Authority Site');		// Title for page of archive of all notices
+
+For file of themes:
+To display the block of plugin in the sidebar to the right place to be inserted php-code that displays a block only if this plugin is activated:
+<?php if(ADMINNEWS===1) { ?><li><h2><?php echo _('Notices'); ?></h2><ul><?php include (SPATH . 'plugins/adminnews/adminnews.php'); ?></ul></li><?php } ?>
+
+You must the text in the box "News from the administration" changed to your own taste.

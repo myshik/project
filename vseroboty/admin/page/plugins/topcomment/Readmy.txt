@@ -1,0 +1,14 @@
+Plugin "Top most commented articles"
+
+Steps for setting:
+
+1. Upload folder with plugin via FTP in the plugins folder
+
+2. Configuring the plug is made to the file in the const.php root folder of  script - look at configuring the plugin if they do not exist, add the lines:
+#### Plugin "Top most commented articles"
+define('TOPCOMMENT', 1);				// Activate the plugin "Top most commented articles"
+define('TOPCOMMENTTITLE', '');			// Between the quotation marks enter the name of the block, example 'Top most commented articles'
+define('COUNTTOP', 5);					// The number displayed in the block most commented articles
+
+3. To display at pages in the sidebar to the right place to be entered php-code that displays a block only if it is activated:
+<?php if(TOPCOMMENT===1) { ?><li><h2><?php echo TOPCOMMENTTITLE; ?></h2><ul><?php include (SPATH . 'plugins/topcomment/topcomment.php'); ?></ul></li><?php } ?>

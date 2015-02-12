@@ -1,0 +1,8 @@
+//
+   Created by user on 11/28/14.
+
+ul
+   each link in links
+      li
+         input.cb(type="checkbox", data-id=link.get("_id").toString(), checked=link.get("checked"))
+         a(href=link.get("shortUrl"))= link.get("shortUrl")

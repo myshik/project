@@ -1,0 +1,14 @@
+nav
+    ul.pagination
+        li
+            a(href="?page="+(selectedPage == 1 ? 1 : (selectedPage - 1)), data-page=(selectedPage == 1 ? 1 : (selectedPage - 1))) &laquo;
+
+        - for(var i=0; i<pageCount; i++) {
+            li(class=(i+1 == selectedPage ? "active" : ""))
+                a(href='?page='+(i+1) data-page=i+1)= i+1
+                    if i+1 == selectedPage
+                        span.sr-only(current)
+        - }
+
+        li
+            a(href="?page="+(selectedPage == Math.round(pageCount) ? selectedPage : (selectedPage+1)) data-page=(selectedPage == pageCount ? selectedPage : (selectedPage+1))) &raquo;

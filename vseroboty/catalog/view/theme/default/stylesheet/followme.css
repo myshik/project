@@ -1,0 +1,24 @@
+/*
+* ------------------------------------------
+* Follow Me Version 1.5.3
+* For Opencart v1.5.1 / 1.5.2 / 1.5.3 
+* Original by KangDJ
+* Updated by HelderIM (V3) 
+* Updated by villagedefrance (1.5.3)
+* Подготовлено специально для opencart.ws
+* Перевод и адаптация модуля Marianna radiance.com.ua fatalemary@gmail.com 
+* ------------------------------------------
+*/
+
+.follow-me {
+	margin-top: 3px;
+	margin-bottom: 10px;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.follow-me img {
+	margin-right: 5px;
+	border: 1px solid #CCDDEE;
+	cursor: pointer;
+}
