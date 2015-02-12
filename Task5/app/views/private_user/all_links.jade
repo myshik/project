@@ -1,7 +1,0 @@
-div(ng-controller="AccordionDemoCtrl")
-        accordion(close-others="oneAtATime")
-            accordion-group(is-open="status.open" ng-repeat="user in users")
-                accordion-heading= "{{user.username}}"
-                    i.pull-right.glyphicon(ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}")
-                li(ng-repeat="link in links")
-                    a(href="{{link.longUrl}}" ng-if="link .user_id == user._id")= "{{link.shortUrl}}"
